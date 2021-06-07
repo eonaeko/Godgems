@@ -1,0 +1,308 @@
+/* This would basically pick up the body and apply the listed style to it*/
+body{
+  
+    background-image: linear-gradient(#9900cd,#ca0273);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*transform: scale(0.95);*/
+     margin: 2.7em;
+}
+/* Sets all potential h1 heading to margin of zero*/
+h1{
+    margin: 0;
+}
+h2{
+    color: rgba(175,165,255,1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*font-family:'Manrope', sans-serif;*/
+    font-weight: 700;
+    text-align: center;
+
+}
+p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Manrope', sans-serif;
+    font-size: large;
+    font-size: 130%;
+}
+.contentPara{
+    line-height: 2rem;
+}
+header a.icon {
+    display: none
+}
+.header-nav li a.closebtn{
+    display: none;
+}
+/* The header container is set to display:flex and justified to space elements in between*/
+.header-container{
+display: flex;
+justify-content: space-between;
+}
+.header-container h1{
+    font-family: 'Manrope', sans-serif ;
+    font-size: 130%;
+    color: white;
+    text-transform: uppercase;
+} 
+/*A div named TOAITH WHICH CONTAINED THE WEBSITE LOGO AND THE WEBSITE NAME IS SET TO FLEX TO ENABLE IT TO BE SET ASIDE 
+EACH OTHER  */
+#TOAIH{
+    display: flex;
+}
+#TOAIH-remove{
+    text-decoration: none;
+}
+/*The logo is set to have a height of 70px and the negative margin is used to draw the logo
+ to align with the web headers*/
+img[src="IMG/God_gem.svg"]{
+    height: 70px;
+    margin-top: -35px;
+}
+.header-nav {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 2em;
+}
+.header-nav li {
+ display: inline;
+ padding: 10px;
+font-family:'Manrope', sans-serif ;
+font-size: 110%;
+}
+.header-nav li a ,.header-nav li a:visited {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+.header-nav li a:focus, .header-nav li a:hover{
+    color: rgba(175,165,255,1);
+    font-size: 120%;
+}
+a#active{
+    padding: 2px;
+    border-bottom: 2px solid black;
+    color: rgba(175,165,255,1);
+    font-style: italic;
+    font-size: 120%;
+}
+#mainCP-grid{
+    display: grid;
+    grid-template-columns: 750px  400px;
+}
+#mainCP{
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 300%;
+    color: white;
+}
+.CallToAction{
+    width: 320px;
+    height: 60px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-family:'Manrope', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30%;
+    background-color: rgba(175,165,255,.8);
+    transition-property: background-color;
+    transition-duration: .6s;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+} 
+.CallToAction:hover ,.CallToAction:focus{
+    background-color: #9900cd;
+}
+#CTA-flex{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: .5em;
+    margin-right: .5em;
+    margin-left: -1em;
+}
+
+.mediaSection{
+    margin: 0 auto;
+    padding: .5em;
+    color: rgba(175,165,255,1);
+    text-align: center;
+    font-size: 140%;
+    width: 700px;
+    height: auto;
+    border-bottom: 2px solid white;
+}
+.mediaSection2-para{
+    text-align: center;
+}
+.mediaSection2{
+    width: 40px;
+    height: 40px;
+    padding:0 1.5em;
+}
+.mediaSection2:hover , .mediaSection2:focus, a:hover .social-span-img{
+    background-color: #9900cd;
+}
+
+
+/* STYLES PECULIAR TO THE MEMBERS PAGE*/
+.Member-Grid{
+    display: grid;
+    grid-template-columns: 300px 30px 500px;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+.Member-Grid-reverse{
+    display: grid;
+    grid-template-columns: 500px 30px 300px;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+.ImgSize{
+
+    height: 450px;
+    border: 5px solid rgba(175,165,255,1);
+    border-radius: 40px;
+}
+.MemberInfo{
+    height: 450px;
+    /*border: 2px solid black;*/
+}
+.MemberRInfo , .MemberRInfo2{
+    display: block;
+    /*border: 2px solid black;*/
+    border-bottom: 3px solid rgba(175,165,255,1);
+    padding: 1em;
+    padding-bottom: .4em;
+    padding-top: 0;
+    color: white;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.MemberRInfo2{
+    padding: 1em;
+    padding-top: .4em;
+}
+.MemberRInfo2 span{
+    display: block;
+    margin: .5em .5em 1em 0em;
+}
+
+.FNAME{
+  font-size: 145%;
+  font-family:'Manrope', sans-serif;
+  font-weight: 900;
+}
+
+.social-span{
+    color: white;
+    text-align: center;
+    font-size: 118%;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: .5em;
+}
+.social-span-img{
+    width: 20px;
+    padding-top: .5em;
+    padding-right: 1em;
+}
+
+
+
+/*Styles for smaller devices like phone*/
+@media(max-width:695px){
+body{
+  /*  margin:0;*/
+}
+header{
+        width: 100%;
+        height: 7%;
+       background-color: #9900cd;
+        position: fixed;
+        display: flex;
+        margin-left: -2.7em;
+        margin-top: -2.7em;
+        
+}
+.header-container{
+ margin-bottom: 2em;
+}
+.header-nav{
+    display: none;
+}
+#Header-nav li{
+    display: block;
+}
+#Header-nav li a.closebtn{
+    text-align: right;
+    margin-right: 1em;
+    font-size: 250%;
+}
+img[src="IMG/God_gem.svg"]{
+   /* margin-left: 1em;*/
+}
+header a.icon {
+   /* background-color: #9900cd;*/
+    color: white;
+    font-size: 150%;
+    display: block;
+    margin-left: 6px;
+}
+.header-nav li a.closebtn{
+    display: block;
+}
+.header-container h1{
+    font-size: 110%;
+}
+.Page-main{
+    /* margin: 1em;*/
+ }
+#mainCP-grid{
+    display: grid;
+    grid-template-columns: 100%;
+} 
+#mainCP{
+    width: 100%;
+    font-size: 220%;
+   margin-top: 1.5em;
+}
+
+img[src="IMG/mic.jpg"]{
+    width: 100%;
+}
+#CTA-flex{
+    display: block;
+    margin-left: 1em;
+}
+.CallToAction{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    width: 100%;
+    font-size: 45%;
+}
+.mediaSection{
+    width: 95%;
+}
+.mediaSection2{
+    width: 7%;
+}
+/*Styles peculiar to the member page for a device at 695px and below*/
+.Member-Grid , .Member-Grid-reverse{
+    grid-template-columns:  90%;
+    justify-content: center;
+    align-items: center;
+}
+.ImgSize{
+    order: -1;
+    width: 90%;
+    height: 450px;
+    margin-right: -20em;
+    
+}
+h2.showcase{
+
+}
+
+
+}
