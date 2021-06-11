@@ -209,15 +209,32 @@ a#active{
     padding-top: .5em;
     padding-right: 1em;
 }
-
-
+#h1-grid{
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    font-family: 'Oswald', sans-serif; /* might change font family to oswards later*/
+}
+.aboutusLogo{
+    width: 470px; 
+}
+.About-grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;
+}
+.CAL{
+    margin-right: 1em;
+    font-size: 90%;
+}
 
 /*Styles for smaller devices like phone*/
 @media(max-width:695px){
 header{
         width: 100%;
-        height: 7%;
-       background-color: #9900cd;
+        height: 5%;
+        background-color: #9900cd;
         display: flex;
         margin-left: -2.7em;
         margin-top: -2.7em;
@@ -291,13 +308,26 @@ img[src="IMG/mic.jpg"]{
     margin-top: 2.5em;
     margin-bottom: 2.5em;  
 }
-#h2-grid{
+#h2-grid, #h1-grid{
     display: grid;
     grid-template-columns: 100%;
     margin-top: 1.5em;
     padding-top: 1em;
-
 }
+.About-grid{
+    grid-template-columns: 100%; 
+}
+.aboutusLogo{
+    width: 100%;
+}
+.CAL{
+    margin-right: 1em;
+    font-size: 110%;
+}
+#AboutUsCp{
+    line-height: 1.7em;
+}
+
 
 
 }
@@ -343,6 +373,13 @@ img[src="IMG/mic.jpg"]{
     .MemberRInfo{
         padding: 1em;
         line-height: 1.8em;
+    }
+    .CAL{
+        margin-right: 1em;
+        font-size: 100%;
+    }
+    #h1-grid{
+        font-size:130%;
     }
 
 }
