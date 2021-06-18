@@ -181,6 +181,10 @@ a#active{
     font-family:'Manrope', sans-serif;
     /*font-family: 'Oswald', sans-serif;*/
 }
+.MemberRInfo{
+    padding: 1em;
+    line-height: 1.8em;
+}
 .MemberRInfo2{
     padding: 1em;
     padding-top: .4em;
@@ -228,9 +232,112 @@ a#active{
     margin-right: 1em;
     font-size: 90%;
 }
+#LIGHTUp{
+    font-size: 300%;
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+#LIGHTUp span{
+    color:#1960ee ;
+}
+.LightCP{
+    text-align: center;
+}
+.LightCP span{
+    font-style: italic;
+    font-size: 180%;
+}
+.MonthlyEvents-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.MonthlyEvents{
+    width: 500px;
+    height: 250px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-left: .7em;
+}
+.specialeventlogo{
+    width: 60%;
+    height: 60%;
+  padding: 2em;
+} 
+.MonthlyEvents h2{
+    color: white;
+    font-size: 145%;
+    text-align: left;
+}
+.MonthlyEvents div{
+  /*  padding: 2em;*/
+  font-size: 80%;
+}
+
+footer{
+    margin-top: 3em;
+    /*border-top: 2px solid white;*/
+    color: white;
+    font-family:'Manrope', sans-serif;
+    font-size: 90%;
+    text-align: center;
+}
+footer span{
+    font-size: 70%;
+}
+#map{
+    width: 50vw;
+    height: 70vh;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+form{
+    width: 250px;
+}
+legend, fieldset{
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+legend{
+    text-align: center;
+    color: white;
+    font-family: 'Manrope', sans-serif ;
+}
+form p{
+    font-size: 100%;
+}
+input[type="text"]{
+    width: 95%;
+    height: 20px;
+    margin: .5em auto;
+    padding: .3em;
+}
+form button {
+    display: block;
+    margin: .3em auto;
+    width: 50%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    font-family:  'Oswald', sans-serif;
+    color: black;
+}
+form button:hover , form button:focus{
+    background-color: #9900cd;
+    color: white;
+}
+
 
 /*Styles for smaller devices like phone*/
 @media(max-width:695px){
+body{
+    margin: 2em;
+}
 header{
         width: 100%;
         height: 5%;
@@ -327,6 +434,31 @@ img[src="IMG/mic.jpg"]{
 #AboutUsCp{
     line-height: 1.7em;
 }
+.MonthlyEvents-flex{
+    display: block;
+}
+.MonthlyEvents{
+    display: block;
+    width: 400px;
+    height: auto;
+}
+.specialeventlogo{
+    display: block;
+    margin: 0 auto;
+}
+.MonthlyEvents h2{
+    font-size: 200%;
+    text-align: center;
+}
+.MonthlyEvents p{
+    text-align:center ;
+}
+.MonthlyEvents div{
+    margin: 1em;
+}
+form{
+    margin: 0 auto;
+}
 
 
 
@@ -380,6 +512,16 @@ img[src="IMG/mic.jpg"]{
     }
     #h1-grid{
         font-size:130%;
+    }
+    .MonthlyEvents{
+     width: 90%;
+    }
+    #map{
+        width: 80vw;
+        margin-left: -1em;
+        display: block;
+        margin: 1em auto;
+        border-radius: 15px;
     }
 
 }
