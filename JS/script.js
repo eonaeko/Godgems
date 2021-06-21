@@ -11,6 +11,8 @@ function openNav() {
     document.getElementById("Header-nav").style.backgroundImage= "linear-gradient(#9900cd,#ca0273)"
     document.getElementById("Header-nav").style.height= "100vh";
     document.getElementById("Myspecial").style.display = "none";
+   // document.getElementById("Header-nav").style.padding = "1em";
+
 
   }
   function closeNav() {

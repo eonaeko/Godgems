@@ -122,6 +122,11 @@ a#active{
     margin-right: .5em;
     margin-left: -1em;
 }
+#CTA-flex a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
 
 .mediaSection{
     margin: 0 auto;
@@ -167,7 +172,6 @@ a#active{
 }
 .MemberInfo{
     height: 450px;
-    /*border: 2px solid black;*/
 }
 .MemberRInfo , .MemberRInfo2{
     display: block;
@@ -248,6 +252,10 @@ a#active{
     font-style: italic;
     font-size: 180%;
 }
+/* A group of div called the monthlyEvents-flex which is used to for contents that would advertise a monthly programme of
+the God's Gem Ministry it is set to display: flex; so that this div can stand side by side of each other
+and flex-wrap to wrap enable flexiblity of the div and also asked to be space evenly among themselves This style evident in the events page */
+
 .MonthlyEvents-flex{
     display: flex;
     flex-wrap: wrap;
@@ -256,7 +264,7 @@ a#active{
 }
 .MonthlyEvents{
     width: 500px;
-    height: 250px;
+    height: 280px;
     border: 1px solid rgba(255, 255, 255, .2);
     border-radius: 20px;
     display: flex;
@@ -275,10 +283,41 @@ a#active{
     text-align: left;
 }
 .MonthlyEvents div{
-  /*  padding: 2em;*/
+  
   font-size: 80%;
+  font-family: 'Oswald', sans-serif;
 }
 
+.MonthlyEvents a{
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 120%;
+    color: white;
+    /*border: 2px solid rgba(255, 255, 255, .2);*/
+    border-radius: 10px;
+    padding: .5em;
+    
+}
+.MonthlyEvents a:hover{
+    background-color: white;
+    color: black;
+    font-family:'Manrope', sans-serif  ;
+}
+.fa-arrow-right{
+    font-size: 90%;
+    margin-left: .5em;
+}
+.Gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.GalleryPhotos{
+    width: 30vw;
+    margin: .5em;
+}
+
+
+/* Styles for the footer*/
 footer{
     margin-top: 3em;
     /*border-top: 2px solid white;*/
@@ -290,13 +329,15 @@ footer{
 footer span{
     font-size: 70%;
 }
+/* Styles to use to contains the map from mapbox */
 #map{
     width: 50vw;
     height: 70vh;
-    border: 2px solid black;
+    border: 2px solid rgba(255, 255, 255, .2);
     margin: 0 auto;
     margin-top: 1.5em;
 }
+/* current styles given to the form on this website on this website */
 form{
     width: 250px;
 }
@@ -331,6 +372,8 @@ form button:hover , form button:focus{
     background-color: #9900cd;
     color: white;
 }
+
+/*END OF STYLES GIVEN TO THE FORM ON THE WEBSITE*/
 
 
 /*Styles for smaller devices like phone*/
@@ -389,6 +432,7 @@ img[src="IMG/mic.jpg"]{
     display: block;
     margin-left: 1em;
 }
+
 .CallToAction{
     display: block;
     margin: 0 auto;
@@ -456,8 +500,19 @@ img[src="IMG/mic.jpg"]{
 .MonthlyEvents div{
     margin: 1em;
 }
+.MonthlyEvents a{
+    text-align: center;
+}
 form{
     margin: 0 auto;
+}
+.Gallery{
+    grid-template-columns: auto;
+
+}
+.GalleryPhotos{
+ width: 80vw;
+ margin: 0 auto;
 }
 
 
